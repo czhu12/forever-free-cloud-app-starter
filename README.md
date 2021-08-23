@@ -1,13 +1,11 @@
-This is a template project I use to build a **simple** and **free** cloud hosted application.
+This is a starter project I use to build a **simple** and **forever free** cloud hosted application. Too often I build a web application that costs a small but annoying amount of money every month. Inevitably, I end up shutting it down, after paying for the service for a couple years.
 
-The focus is **free**. Too often I build a web application that costs a small but annoying amount of money every month. Inevitably, I end up shutting it down, after paying for the service for a couple years.
+The focus is **forever free**. There are a lot of services that offer a trial for a week or even a year but then charge a minimum price per month. This stack can be hosted in the cloud for free forever, assuming the usage stays under some amount.
 
-I decided to go ahead and build a stack that can be hosting in the cloud for free forever, assuming the usage stays under some amount.
-
-The stack for this template is:
+Most simple projects can be build with a web server and a database, that's all starter has. If your use-case is more complex than that, maybe this isn't for you.
 
 ### Stack
-Every part of this stack is free for apps that have low usage.
+Every part of this stack is forever free for apps that have low usage.
 
 **Frontend**
 * Bootstrap
@@ -21,8 +19,7 @@ Every part of this stack is free for apps that have low usage.
 * dot-env
 
 **Storage**
-* DynamoDB (storage of 25GB, free forever)
-* Imgur (image storage, free forever)
+* DynamoDB (25GB storage, free forever)
 
 **Infrastructure**
 * Docker Container
