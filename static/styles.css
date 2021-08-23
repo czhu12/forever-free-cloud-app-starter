@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(255, 253, 251);
+  height: 100%;
+  font-family: "Lato";
+  color: #333;
+}
+
+.fancy-font {
+  font-family: "Anton";
+}
+
+.text-main {
+  color: rgb(189, 93, 56);
+}
+
+@media (min-width: 768px) {
+  .container-small {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .container-small {
+    margin: 0 auto;
+    width: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-small {
+    margin: 0 auto;
+    width: 700px;
+  }
+}
+
+.container-small, .container-large {
+    max-width: 100%;
+}
+
+.btn-main, .btn-main:visited {
+  background-color: rgb(189, 93, 56) !important;
+  border-color: rgb(189, 93, 56) !important;
+  color: white;
+}
+.btn-main:hover, .btn-main:active {
+  background-color: rgb(170,84,50) !important;
+  border-color: rgb(170,84,50) !important;
+  color: white;
+}

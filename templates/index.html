@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="container-small py-5">
+  <div class="text-end mb-4">
+    <div style="font-size: 2em; cursor: pointer;">
+      <i class="fab fa-github"></i>
+    </div>
+  </div>
+  <div class="text-center mb-4">
+    <div class="h1 text-center fancy-font">
+      A STARTER PROJECT FOR BUILDING <span class="text-main">FREE</span> APPS
+    </div>
+    Your app, on the cloud, forever running, forever free.
+  </div>
+  <p>
+  {{ readme | safe }}
+  </p>
+
+  <div class="d-grid gap-2">
+    <button class="btn btn-main btn-lg btn-block">
+      Find us on Github
+      <i class="ms-2 fab fa-github"></i>
+    </button>
+  </div>
+</div>
+
+{% endblock %}
