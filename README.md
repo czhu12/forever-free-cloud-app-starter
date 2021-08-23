@@ -32,9 +32,9 @@ Every part of this stack is free for apps that have low usage.
 
 ### Installation
 ```
-git clone https://github.com/czhu12/free-cloud-app-template
+git clone https://github.com/czhu12/forever-free-cloud-app-starter
 
-cd free-cloud-app-template
+cd forever-free-cloud-app-starter
 
 ./bin/install
 
@@ -42,3 +42,9 @@ cd free-cloud-app-template
 
 ./bin/deploy
 ```
+
+### What's next?
+In my experience building small DB backed applications, having a nice high-level, black-box functional testing environment is really nice. All I want to know is that a syntax error won't cause the whole app to fail to boot, or the main feature of the app is completely broken. I think the right way to do this is a Docker environment that:
+1. Installs the application
+2. Mocks out DynamoDB
+3. Run's pytest against a known port.

@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<div class="container-small py-5">
+<div class="container-small py-5" x-data="{}">
   <div class="text-end mb-4">
-    <div style="font-size: 2em; cursor: pointer;">
+    <div style="font-size: 2em; cursor: pointer;" x-on:click="location.href='https://github.com/czhu12/forever-free-cloud-app-starter'">
       <i class="fab fa-github"></i>
     </div>
   </div>
@@ -18,7 +18,7 @@
   </p>
 
   <div class="d-grid gap-2">
-    <button class="btn btn-main btn-lg btn-block">
+    <button @click="location.href='https://github.com/czhu12/forever-free-cloud-app-starter'" class="btn btn-main btn-lg btn-block">
       Find us on Github
       <i class="ms-2 fab fa-github"></i>
     </button>
