@@ -4,7 +4,9 @@ The focus is **forever free**. There are a lot of services that offer a trial fo
 
 Most simple projects can be build with a web server and a database, that's all starter has. If your use-case is more complex than that, maybe this isn't for you.
 
+
 ### Stack
+
 Every part of this stack is forever free for apps that have low usage.
 
 **Frontend**
@@ -28,6 +30,7 @@ Every part of this stack is forever free for apps that have low usage.
 \* *50 hours = 180,000 seconds. If your average response time is 1 second, and your app can run on a 512 GHz CPU, Google Cloud Run will host approximately 180,000 requests. See full details [here](https://cloud.google.com/run/pricing)*
 
 ### Installation
+
 ```
 git clone https://github.com/czhu12/forever-free-cloud-app-starter
 
@@ -40,7 +43,9 @@ cd forever-free-cloud-app-starter
 ./bin/deploy
 ```
 
+
 ### What's next?
+
 In my experience building small DB backed applications, having a nice high-level, black-box functional testing environment is really nice.
 
 All I want to know is that a syntax error won't cause the whole app to fail to boot, or the main feature of the app is completely broken.
@@ -49,4 +54,4 @@ I'm thinking the right way to do this is a Docker environment that:
 
 1. Installs the application
 2. Mocks out DynamoDB
-3. Run's pytest against a known port.
+3. Run's pytest against a known port
