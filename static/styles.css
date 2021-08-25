@@ -23,3 +23,6 @@ body {
   border-color: rgb(170,84,50) !important;
   color: white;
 }
+.content {
+  max-width: 600px;
+}

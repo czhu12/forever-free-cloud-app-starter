@@ -41,6 +41,8 @@ cd forever-free-cloud-app-starter
 # Update .env file with proper credentials
 
 ./bin/deploy
+
+# Visit your website!
 ```
 
 

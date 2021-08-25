@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<div class="container py-5" x-data="{}">
+<div class="container py-5 mb-3 content" x-data="{}">
   <div class="text-end mb-4">
     <div style="font-size: 2em; cursor: pointer;" x-on:click="location.href='https://github.com/czhu12/forever-free-cloud-app-starter'">
       <i class="fab fa-github"></i>
@@ -11,7 +11,7 @@
     <div class="h1 text-center fancy-font">
       A STARTER PROJECT FOR BUILDING <span class="text-main">FOREVER FREE</span> APPS
     </div>
-    Your app, on the cloud, forever running, forever free.
+    <i>Your app, on the cloud, forever running, forever free.</i>
   </div>
   <p>
   {{ readme | safe }}
@@ -19,7 +19,7 @@
 
   <div class="d-grid gap-2">
     <button @click="location.href='https://github.com/czhu12/forever-free-cloud-app-starter'" class="btn btn-main btn-lg btn-block">
-      Find us on Github
+      Fork on Github
       <i class="ms-2 fab fa-github"></i>
     </button>
   </div>
