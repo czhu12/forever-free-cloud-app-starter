@@ -1,10 +1,12 @@
 import os
 from pynamodb.models import Model
 from pynamodb.attributes import UnicodeAttribute
+from dotenv import load_dotenv
 
 class Credentials:
-    aws_access_key_id = os.environ.get('AWS_ACCESS_KEY')
-    aws_secret_access_key = os.environ.get('AWS_SECRET_KEY')
+    load_dotenv()
+    aws_access_key_id = os.getenv('AWS_ACCESS_KEY')
+    aws_secret_access_key = os.getenv('AWS_SECRET_KEY')
 
 ## Example model for a basic user class
 #class UserModel(Model):
